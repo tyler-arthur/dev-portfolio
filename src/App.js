@@ -1,11 +1,14 @@
 import React from 'react';
-import './assets/main.css'
+import './assets/main.css';
+import Navbar from './components/navbar/Navbar';
+import Home from './components/pages/Home'
 
 function App() {
   return (
-    <div className="font-bold text-red-600">
-      Hello World
-    </div>
+    <React.Fragment>
+    <Navbar />
+    <Home />
+    </React.Fragment>
   );
 }
 
