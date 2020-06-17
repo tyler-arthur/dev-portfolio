@@ -1,0 +1,10 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+/* @font-face {
+    font-family: 'Cabin-Regular';
+    src: local('Cabin-Regular'), url(../fonts/Cabin-Regular.ttf) format('ttf');
+} */
+
+@import "tailwindcss/utilities";
