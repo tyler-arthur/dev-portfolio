@@ -18,6 +18,15 @@ module.exports = {
       black: '#000',
       white: '#fff',
 
+      custom: {
+        purple: '#32213A',
+        darkPurple: '#221627',
+        orange: '#FB8B24',
+        aqua: '#78FFD6',
+        blue: '#7C9EB2',
+        lavender: '#FCEFF9'
+      },
+
       gray: {
         100: '#f7fafc',
         200: '#edf2f7',
@@ -260,6 +269,7 @@ module.exports = {
       '4xl': '2.25rem',
       '5xl': '3rem',
       '6xl': '4rem',
+      '7xl': '5rem',
     },
     fontWeight: {
       hairline: '100',
