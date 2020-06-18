@@ -18,19 +18,19 @@ const AboutMe = () => {
             have studied fire sciences at <span>
             <a href="https://www.sdmiramar.edu/index.php/programs/fire-protection-technology"
             className="text-custom-aqua underline">SDCCD Miramar</a></span>. 
-            My exposure to many different industries has given me a broad view of client management and customer relationships.
+            My exposure to many different industries has given me a broad view of client management and building customer relationships.
           </p>
           <h1 className="text-lg text-custom-lavender mt-6">Some technologies I like to leverage are:</h1>
           <div className="flex justify-around mt-6">
             <div className="flex flex-col">
-              <span className="text-custom-orange text-lg"><i class="fab fa-js-square text-2xl text-custom-orange"></i> JavaScript</span>
-              <span className="text-custom-orange text-lg"><i class="fab fa-react text-2xl text-custom-orange"></i> React</span>
-              <span className="text-custom-orange text-lg"><i class="fab fa-envira text-2xl text-custom-orange"></i> MongoDb</span>
+              <span className="text-custom-orange text-lg"><i className="fab fa-js-square text-2xl text-custom-orange"></i> JavaScript</span>
+              <span className="text-custom-orange text-lg"><i className="fab fa-react text-2xl text-custom-orange"></i> React</span>
+              <span className="text-custom-orange text-lg"><i className="fab fa-envira text-2xl text-custom-orange"></i> MongoDb</span>
             </div>
             <div className="flex flex-col">
-              <span className="text-custom-orange text-lg"><i class="fab fa-node-js text-2xl text-custom-orange"></i> NodeJS</span>
-              <span className="text-custom-orange text-lg"><i class="fas fa-server text-2xl text-custom-orange"></i> Express</span>
-              <span className="text-custom-orange text-lg"><i class="fab fa-css3-alt text-2xl text-custom-orange"></i> Multiple CSS Frameworks</span>
+              <span className="text-custom-orange text-lg"><i className="fab fa-node-js text-2xl text-custom-orange"></i> NodeJS</span>
+              <span className="text-custom-orange text-lg"><i className="fas fa-server text-2xl text-custom-orange"></i> Express</span>
+              <span className="text-custom-orange text-lg"><i className="fab fa-css3-alt text-2xl text-custom-orange"></i> Multiple CSS Frameworks</span>
             </div>
           </div>
         </div>

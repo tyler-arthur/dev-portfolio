@@ -1,11 +1,12 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import './assets/main.css';
 import Navbar from './components/navbar/Navbar';
 import Home from './components/pages/Home';
 import Overlay from './components/overlay/Overlay';
+import AboutMe from './components/pages/AboutMe';
+import Projects from './components/pages/Projects';
 import pageContext from './utils/pageContext';
-import AboutMe from './components/about-me/AboutMe';
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Flashlight from './components/flashlight/Flashlight';
 
 function App() {
@@ -20,6 +21,11 @@ function App() {
             <Navbar />
             <Overlay />
             <AboutMe />
+          </Route>
+          <Route path="/projects">
+            <Navbar />
+            <Overlay />
+            <Projects />
           </Route>
           <Route path="/">
             <Navbar />

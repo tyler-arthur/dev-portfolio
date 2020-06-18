@@ -21,7 +21,11 @@ const Navbar = () => {
           >
             About
           </Link>
-          <a href="#">Projects</a>
+          <Link to="/projects"
+            href="#responsive-header"
+          >
+            Projects
+          </Link>
           <a href="#">Contact</a>
       </div>
     </nav>
