@@ -6,6 +6,7 @@ import Home from './components/pages/Home';
 import Overlay from './components/overlay/Overlay';
 import AboutMe from './components/pages/AboutMe';
 import Projects from './components/pages/Projects';
+import Contact from './components/pages/Contact';
 import pageContext from './utils/pageContext';
 import Flashlight from './components/flashlight/Flashlight';
 
@@ -17,6 +18,11 @@ function App() {
       <pageContext.Provider>
       <Router>
         <Switch>
+          <Route path="/contact">
+            <Navbar />
+            <Overlay />
+            <Contact />
+          </Route>
           <Route path="/about-me">
             <Navbar />
             <Overlay />

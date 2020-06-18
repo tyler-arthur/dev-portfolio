@@ -15,7 +15,7 @@ const Projects = () => {
   return (
     <div className="flex items-center justify-center mt-10">
       <div className="flex flex-col w-2/3 mr-24">
-        <h1 className="text-4xl font-bold text-custom-orange underline mb-6">Some of my work</h1>
+        <h1 className="text-4xl font-bold text-custom-orange underline ml-10 mb-6">Some of my work</h1>
         <Card 
           title={projects[projectState].project}
           link={projects[projectState].link}
