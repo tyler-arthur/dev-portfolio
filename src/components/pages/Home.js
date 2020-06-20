@@ -1,10 +1,9 @@
 import React from 'react';
-import TwoFace from '../stateControllers/TwoFace'
 
 const Home = () => {
 
   return (
-    <div className="flex flex-col items-start justify-center w-2/3 mt-12 ml-56">
+    <div className="flex flex-col items-start justify-center w-2/3 mt-32 ml-56">
       <p className="w-2/3 text-xl font-bold text-custom-orange">
         Hey there, my name is
       </p>
@@ -17,8 +16,8 @@ const Home = () => {
       <p className="w-2/3 self-start text-xl font-medium text-custom-orange mt-4">
         I am a full-stack web developer based in sunny San Diego, CA and I enjoy building eye-catching websites with elegance and simplicity in mind.
       </p>
-      <div className="flex w-1/2 justify-around">
-        <button className={`w-48 h-12 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg mt-24 focus:outline-none focus:shadow-outline`}>
+      <div className="flex xl:w-1/2 lg:2/3 xl:justify-around lg:justify-between">
+        <button className={`w-48 h-12 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg mt-24 focus:outline-none focus:shadow-outline ml-6`}>
           Let's get started!
         </button>
         <button className={`w-48 h-12 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg mt-24 focus:outline-none focus:shadow-outline`}>

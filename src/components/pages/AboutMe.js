@@ -1,11 +1,13 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
+import Me from '../../assets/images/img_1128conv_large_1.jpg'
 const AboutMe = () => {
 
+  console.log(Me)
 
   return (
     <React.Fragment>
-      <div className="flex justify-center items-center mt-10">
+      <div className="flex justify-center items-center mt-32">
         <div className="w-1/3 mr-24">
           <h1 className="text-4xl font-bold text-custom-orange underline mb-6">About</h1>
           <p className="text-lg text-custom-lavender">
@@ -32,7 +34,19 @@ const AboutMe = () => {
               <span className="text-custom-orange text-lg"><i className="fas fa-server text-2xl text-custom-orange"></i> Express</span>
               <span className="text-custom-orange text-lg"><i className="fab fa-css3-alt text-2xl text-custom-orange"></i> Multiple CSS Frameworks</span>
             </div>
-          </div>
+            </div>
+            <div className="mt-10">
+              <Link to="/">
+                <button className={`w-48 h-12 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg mr-16 focus:outline-none focus:shadow-outline`}>
+                  Go back to the start
+                </button>
+              </Link>
+              <Link to="/projects">
+                <button className={`w-48 h-12 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg focus:outline-none focus:shadow-outline`}>
+                  View some projects
+                </button>
+              </Link>
+            </div>
         </div>
         <div className="block h-64 w-64 m-4 rounded-full overflow-hidden">
           <img className="h-full w-full object-top object-cover" 
