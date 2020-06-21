@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 
@@ -17,12 +18,16 @@ const Home = () => {
         I am a full-stack web developer based in sunny San Diego, CA and I enjoy building eye-catching websites with elegance and simplicity in mind.
       </p>
       <div className="flex xl:w-1/2 lg:2/3 xl:justify-around lg:justify-between">
-        <button className={`w-48 h-12 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg mt-24 focus:outline-none focus:shadow-outline ml-6`}>
-          Let's get started!
-        </button>
-        <button className={`w-48 h-12 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg mt-24 focus:outline-none focus:shadow-outline`}>
-          Let's get in touch!
-        </button>
+        <Link to="/about">
+          <button className={`w-48 h-12 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg mt-24 focus:outline-none focus:shadow-outline ml-6`}>
+            Let's get started!
+          </button>
+        </Link>
+        <Link to="/contact">
+          <button className={`w-48 h-12 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg mt-24 focus:outline-none focus:shadow-outline`}>
+            Let's get in touch!
+          </button>
+        </Link>
       </div>
     </div>
   );
