@@ -24,7 +24,7 @@ const Projects = () => {
           description={projects[projectState].description}
         />
         <div className="my-10 self-center">
-        <Link to="/about">
+        <Link to="/about-me">
           <button className={`w-48 h-12 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg mr-16 focus:outline-none focus:shadow-outline`}>
               Learn more about me
           </button>

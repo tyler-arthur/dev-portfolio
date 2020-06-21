@@ -18,7 +18,7 @@ const Home = () => {
         I am a full-stack web developer based in sunny San Diego, CA and I enjoy building eye-catching websites with elegance and simplicity in mind.
       </p>
       <div className="flex xl:w-1/2 lg:2/3 xl:justify-around lg:justify-between">
-        <Link to="/about">
+        <Link to="/about-me">
           <button className={`w-48 h-12 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg mt-24 focus:outline-none focus:shadow-outline ml-6`}>
             Let's get started!
           </button>
