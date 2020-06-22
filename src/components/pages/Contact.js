@@ -38,7 +38,7 @@ const Contact = () => {
           className=" text-xl font-semibold w-full rounded-lg text-justify text-center p-2 my-2 focus:outline-none focus:shadow-outline"
           name="name"
           type="text"
-          placeholder="What's should I call you?"
+          placeholder="What should I call you?"
           onChange={handleChange}
           value={values.name}
           rows="1"
