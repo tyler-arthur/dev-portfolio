@@ -16,7 +16,7 @@ const Hamburger = () => {
     <div className="sticky top-auto mt-2 mr-6 text-5xl">
       <button onClick={switchMenuState}
       >
-        <i class="fas fa-bars text-custom-aqua"></i>
+        <i className="fas fa-bars text-custom-aqua"></i>
       </button>
       {menuState === false?
         null
