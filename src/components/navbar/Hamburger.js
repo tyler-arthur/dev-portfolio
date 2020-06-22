@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -26,7 +26,7 @@ const Hamburger = () => {
       {menuState === false?
         null
         :
-        <div className="z-10 fixed py-2 px-5 mt-4 -ml-12 space-y-4 bg-opacity-75 bg-custom-darkPurple border-b border-l border-custom-orange shadow-inner text-xl font-medium text-right text-custom-aqua">
+        <div className="z-10 fixed md:text-3xl py-2 px-8 mt-4 md:-ml-32 -ml-24 space-y-4 bg-opacity-75 bg-custom-darkPurple border-b border-l border-custom-orange shadow-inner text-xl font-medium text-right text-custom-aqua">
           <Link className="block focus:transition ease-in-out duration-300 "
           onClick={switchMenuState}  
           to="/"
@@ -55,7 +55,7 @@ const Hamburger = () => {
           >
             Contact
           </Link>
-          <div className="space-x-4 text-2xl">
+          <div className="space-x-4 text-2xl md:hidden">
             <a href="https://github.com/tarthurf">
               <i className="fab fa-github text-custom-aqua"></i>
             </a>
