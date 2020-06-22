@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Hamburger = () => {
 
-  const [menuState, setMenuState] = useState(true)
+  const [menuState, setMenuState] = useState(false)
 
   const switchMenuState = () => {
     menuState === false ?

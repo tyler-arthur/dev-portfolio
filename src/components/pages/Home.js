@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Home = () => {
 
   return (
-    <div className="flex flex-col mx-3 md:mx-16 p-6">
+    <div className="flex flex-col mt-20 mx-3 md:mx-16 p-6">
       <p className="py-2 text-xl text-left font-bold text-custom-orange">
         Hey there, my name is
       </p>

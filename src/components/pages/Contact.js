@@ -20,12 +20,12 @@ const Contact = () => {
   );
 
   return (
-    <div className="flex flex-col mx-3 md:mx-16 p-6">
+    <div className="flex flex-col mt-20 mx-3 md:mx-16 p-6">
       <div className="text-center">
         <h1 className="text-4xl font-medium text-custom-orange underline">
           What's Next?
         </h1>
-        <p className="text-xl font-medium text-custom-lavender">
+        <p className="text-xl md:text-2xl font-medium text-custom-lavender">
           I am currently looking for work as a developer. If you like what you see, lets get in touch! Contact me, let's get coffee and chat.
         </p>
       </div>
@@ -70,18 +70,18 @@ const Contact = () => {
           rows="4"
           required
         ></textarea>
-        <button className="flex-wrap flex-shrink p-2 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg focus:outline-none focus:shadow-outline"
+        <button className="flex-wrap flex-shrink md:text-2xl p-2 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg focus:outline-none focus:shadow-outline"
         >Submit</button>
       </form>
       <div className="h-1 w-full rounded-full bg-custom-orange"></div>
       <div className="flex justify-around mt-6">
         <Link to="/projects">
-          <button className="flex-wrap flex-shrink p-2 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg focus:outline-none focus:shadow-outline">
+          <button className="flex-wrap flex-shrink md:text-2xl p-2 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg focus:outline-none focus:shadow-outline">
             Go Back
           </button>
         </Link>
         <Link to="/">
-          <button className="flex-grow flex-shrink p-2 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg focus:outline-none focus:shadow-outline">
+          <button className="flex-grow flex-shrink md:text-2xl p-2 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg focus:outline-none focus:shadow-outline">
             Start Over
           </button>
         </Link>
