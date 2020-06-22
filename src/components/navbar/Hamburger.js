@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Hamburger = () => {
 
-  const [menuState, setMenuState] = useState(false)
+  const [menuState, setMenuState] = useState(true)
 
   const switchMenuState = () => {
     menuState === false ?
@@ -13,10 +14,14 @@ const Hamburger = () => {
   }
 
   return (
-    <div className="sticky top-auto mt-2 mr-6 text-5xl">
+    <div className="sticky top-auto mt-2 mr-6 text-5xl text-custom-orange">
       <button onClick={switchMenuState}
       >
-        <i className="fas fa-bars text-custom-aqua"></i>
+        {menuState === false ?
+          <FontAwesomeIcon icon="ellipsis-h" />
+          :
+          <FontAwesomeIcon icon="ellipsis-v" />
+        }
       </button>
       {menuState === false?
         null

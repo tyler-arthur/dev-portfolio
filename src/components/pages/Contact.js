@@ -20,7 +20,7 @@ const Contact = () => {
   );
 
   return (
-    <div className="flex flex-col mx-3 p-6">
+    <div className="flex flex-col mx-3 md:mx-16 p-6">
       <div className="text-center">
         <h1 className="text-4xl font-medium text-custom-orange underline">
           What's Next?

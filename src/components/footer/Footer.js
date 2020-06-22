@@ -4,11 +4,11 @@ const Footer = () => {
 
 
   return (
-    <React.Fragment>
-      <footer className="bottom-0 w-full p-4 bg-custom-darkPurple lg:pin-b lg:mt-16 text-center text-custom-orange">
+    <div className="absolute w-full bottom-0 p-4 bg-custom-darkPurple lg:pin-b lg:mt-16 text-center text-custom-orange">
+      <footer>
         Created by Tyler Arthur
       </footer>
-    </React.Fragment>
+    </div>
   );
 }
 

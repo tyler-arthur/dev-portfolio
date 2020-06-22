@@ -6,28 +6,31 @@ const AboutMe = () => {
   console.log(Me)
 
   return (
-    <div className="flex flex-col justify-center mx-3 p-6">
+    <div className="flex flex-col justify-center md:mx-16 mx-3 p-6">
       <div className="text-center space-y-3">
         <h1 className="text-4xl font-bold text-custom-orange underline">About</h1>
         <p className="text-lg text-custom-lavender">
           Hey there! In case you missed it, my name is Tyler. I am a full-stack web developer with expertise in customer service which ensures that my team delivers exactly what the customer wants. 
         </p>
-        <div className="h-64 w-64 m-4 rounded-full overflow-hidden">
-          <img className="h-full w-full object-top object-cover" 
-            src={"/static/media/img_1128conv_large_1.1a6a8872.jpg"} 
-            alt="me" 
-          />
+        <div className="sm:hidden md:block h-1 w-full rounded-full bg-custom-orange"></div>
+        <div className="md:flex md:items-center">
+          <div className="h-64 w-64 m-4 rounded-full overflow-hidden md:flex-shrink-0">
+            <img className="h-full w-full object-top object-cover" 
+              src={"/static/media/img_1128conv_large_1.1a6a8872.jpg"} 
+              alt="me" 
+            />
+          </div>
+          <p className="text-lg text-custom-lavender">
+            I have a certificate for web development from <span>
+            <a href="https://bootcamp.extension.ucsd.edu/coding/"
+            className="text-custom-aqua underline">UC San Diego Extension</a></span> and 
+            have studied fire sciences at <span>
+            <a href="https://www.sdmiramar.edu/index.php/programs/fire-protection-technology"
+            className="text-custom-aqua underline">SDCCD Miramar</a></span>. 
+            My exposure to many different industries has given me a broad view of client management and building customer relationships.
+          </p>
         </div>
-        <p className="text-lg text-custom-lavender">
-          I have a certificate for web development from <span>
-          <a href="https://bootcamp.extension.ucsd.edu/coding/"
-          className="text-custom-aqua underline">UC San Diego Extension</a></span> and 
-          have studied fire sciences at <span>
-          <a href="https://www.sdmiramar.edu/index.php/programs/fire-protection-technology"
-          className="text-custom-aqua underline">SDCCD Miramar</a></span>. 
-          My exposure to many different industries has given me a broad view of client management and building customer relationships.
-        </p>
-        <div className="h-1 w-full rounded-full bg-custom-orange"></div>
+        <div className="md:hidden h-1 w-full rounded-full bg-custom-orange"></div>
         <h1 className="text-lg text-custom-lavender">Some technologies I like to leverage are:</h1>
       </div>
       <div className="flex flex-col text-center space-y-1">

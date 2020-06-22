@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 const Overlay = () => {
 
   const [width, setWidth] = useState(window.innerWidth);
-  const breakpoint = 640;
+  const breakpoint = 768;
 
   useEffect(() => {
     /* Inside of a "useEffect" hook add an event listener that updates
@@ -28,7 +28,7 @@ const Overlay = () => {
         <a href="https://www.linkedin.com/in/tyler-arthur-8a64779b/">
           <i className="fab fa-linkedin text-3xl text-custom-aqua"></i>
         </a>
-      <div className="lg:border lg:border-black lg:bg-custom-orange lg:w-1 lg:h-12 lg:h-32 lg:rounded-full mb-16 mt-4 lg:mt-0"></div>
+      <div className="sm:hidden md:block border border-black bg-custom-orange w-1 h-32 rounded-full mt-4 mb-16"></div>
     </div>
   );
 }
