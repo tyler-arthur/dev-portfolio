@@ -2,49 +2,76 @@ import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import Card from '../card/Card';
 import projects from '../../assets/projects';
-import MunchiMaps from '../../assets/images/munchimaps(cropped).png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircle as farCircle } from '@fortawesome/free-regular-svg-icons';
+import { faCircle as fasCircle } from '@fortawesome/free-solid-svg-icons';
+import munchiMaps from '../../assets/images/munchimaps(cropped).png';
+
 
 const Projects = () => {
 
-  console.log(MunchiMaps)
+  console.log(munchiMaps)
 
   let [projectState, setProjectState] = useState(0);
 
   if (projectState >= 3) projectState = 0;
   if (projectState <= -1) projectState = 2;
-
+  
   return (
-    <div className="flex items-center justify-center mt-32">
-      <div className="flex flex-col w-2/3 mr-24">
-        <h1 className="text-4xl font-bold text-custom-orange underline ml-10 mb-6">Some of my work</h1>
-        <Card 
-          title={projects[projectState].project}
-          link={projects[projectState].link}
-          image={projects[projectState].img}
-          description={projects[projectState].description}
-        />
-        <div className="my-10 self-center">
+    <div className="flex flex-col mt-20 mx-3 md:mx-16 lg:mx-24 xl:mx-48 xxl:mx-64 p-6">
+      <h1 className="text-4xl font-medium text-center text-custom-orange underline">Some of my work</h1>
+      <Card 
+        title={projects[projectState].project}
+        link={projects[projectState].link}
+        image={projects[projectState].img}
+        description={projects[projectState].description}
+      />
+      <div className="flex justify-around lg:justify-center space-x-10 items-center mt-2 lg:mt-6 mb-6">
+        <button className="flex-wrap flex-shrink md:text-2xl p-2 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg focus:outline-none focus:shadow-outline"
+          onClick={() => setProjectState(projectState -= 1)}
+        >
+          <FontAwesomeIcon icon="angle-left" />
+        </button>
+        <div className="space-x-5 text-custom-orange">
+        {projectState === 0 ?
+          <FontAwesomeIcon icon={fasCircle} />
+          :
+          <FontAwesomeIcon icon={farCircle} />
+        }
+        </div>
+        <div className="space-x-5 text-custom-orange">
+        {projectState === 1 ?
+          <FontAwesomeIcon icon={fasCircle} />
+          :
+          <FontAwesomeIcon icon={farCircle} />
+        }
+        </div>
+        <div className="space-x-5 text-custom-orange">
+        {projectState === 2 ?
+          <FontAwesomeIcon icon={fasCircle} />
+          :
+          <FontAwesomeIcon icon={farCircle} />
+        }
+        </div>
+        <button className="flex-wrap flex-shrink md:text-2xl p-2 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg focus:outline-none focus:shadow-outline"
+          onClick={() => setProjectState(projectState += 1)}
+        >
+          <FontAwesomeIcon icon="angle-right" />
+        </button>
+      </div>
+      <div className="h-1 w-full mb-5 rounded-full bg-custom-orange"></div>
+      <div className="flex justify-around">
         <Link to="/about-me">
-          <button className={`w-48 h-12 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg mr-16 focus:outline-none focus:shadow-outline`}>
-              Learn more about me
+          <button className="flex-wrap flex-shrink md:text-2xl p-2 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg focus:outline-none focus:shadow-outline">
+              Go Back
           </button>
         </Link>
         <Link to="/contact">
-          <button className={`w-48 h-12 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg focus:outline-none focus:shadow-outline`}>
-            Lets get in touch
+          <button className="flex-wrap flex-shrink md:text-2xl p-2 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg focus:outline-none focus:shadow-outline">
+            Contact Me
           </button>
         </Link>
       </div>
-      </div>
-      <div className="flex flex-col -mt-32 justify-between">
-        <button className="w-48 h-12 border border-custom-aqua text-custom-aqua rounded-br-full rounded-tr-full mt-24 focus:outline-none focus:shadow-outline"
-          onClick={() => setProjectState(projectState += 1)}
-        >Next</button>
-        <button className="w-48 h-12 border border-custom-aqua text-custom-aqua rounded-bl-full rounded-tl-full mt-24 focus:outline-none focus:shadow-outline"
-          onClick={() => setProjectState(projectState -= 1)}
-        >Last</button>
-      </div>
-
     </div>
   );
 }

@@ -6,11 +6,11 @@ const Card = (props) => {
 
   return (
     <React.Fragment>
-    <div className="flex justify-center items-center">
-      <div className="w-3/5 h-1/3 z-10 bg-custom-darkPurple py-4 px-8 shadow-lg rounded-bl-lg rounded-tr-lg">
+    <div className="flex flex-col justify-center lg:flex-row items-center mt-6">
+      <div className="z-10 p-4 lg:w-3/5 bg-custom-darkPurple shadow-lg rounded-t-lg lg:rounded-t-none lg:rounded-l-lg">
         <div className="flex flex-col">
-          <h1 className="text-custom-aqua text-3xl underline"><a href={props.link}>{props.title}</a></h1>
-          <div className="block h-3/4 w-full m-4 self-center overflow-hidden p-4 bg-custom-lavender shadow-lg">
+          <h1 className="mb-2 text-custom-aqua text-2xl md:text-3xl underline lg:no-underline lg:hover:underline"><a href={props.link}>{props.title}</a></h1>
+          <div className="self-center p-2 overflow-hidden bg-custom-lavender shadow-lg ">
             <img className="h-full w-full object-center overflow-hidden" 
               src={props.image} 
               alt={props.title}
@@ -18,9 +18,10 @@ const Card = (props) => {
           </div>
         </div>
       </div>
-      <div className="w-1/3 h-1/3 z-0 border-4 border-solid border-custom-blue -ml-2 pl-8 p-4 shadow-inner rounded-md">
-        <p className="text-custom-orange text-lg">{props.description}</p>
+      <div className="w-11/12 lg:w-2/5 px-2 pt-6 pb-2 -mt-4 lg:pt-2 lg:-ml-4 lg:pl-6 lg:text-left border-4 border-solid border-custom-blue shadow-inner rounded-md text-custom-orange text-lg md:text-xl">
+        <p className="border-t-2  lg:border-t-0 lg:border-l-2 border-custom-orange p-2">{props.description}</p>
       </div>
+      
     </div>
     </React.Fragment>
   );

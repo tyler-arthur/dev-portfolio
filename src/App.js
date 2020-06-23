@@ -8,43 +8,43 @@ import Overlay from './components/overlay/Overlay';
 import AboutMe from './components/pages/AboutMe';
 import Projects from './components/pages/Projects';
 import Contact from './components/pages/Contact';
-import pageContext from './utils/pageContext';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEllipsisH, faEllipsisV, faCircle as fasCircle, faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { faCircle as farCircle } from '@fortawesome/free-regular-svg-icons';
+
+library.add(faGithub, faLinkedin, faEllipsisV, faEllipsisH, fasCircle, farCircle, faAngleLeft, faAngleRight)
 
 function App() {
 
   return (
 
-    <div className="bg-custom-purple h-screen overflow-visible overflow-scroll">
-      <pageContext.Provider>
+    <div className="relative pb-48 bg-custom-purple min-h-screen relative overflow-hidden">
       <Router>
         <Switch>
           <Route path="/contact">
             <Navbar />
             <Overlay />
             <Contact />
-            <Footer />
           </Route>
           <Route path="/about-me">
             <Navbar />
             <Overlay />
             <AboutMe />
-            <Footer />
           </Route>
           <Route path="/projects">
             <Navbar />
             <Overlay />
             <Projects />
-            <Footer />
           </Route>
           <Route path="/">
             <Navbar />
             <Overlay />
             <Home />
-            <Footer />
           </Route>
         </Switch>
+        <Footer />
       </Router>
-      </pageContext.Provider>
     </div>
   );
 }
