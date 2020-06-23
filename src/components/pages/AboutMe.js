@@ -13,14 +13,14 @@ const AboutMe = () => {
           Hey there! In case you missed it, my name is Tyler. I am a full-stack web developer with expertise in customer service which ensures that my team delivers exactly what the customer wants. 
         </p>
         <div className="sm:hidden md:block h-1 w-full rounded-full bg-custom-orange"></div>
-        <div className="lg:justify-around">
-          <div className="h-64 w-64 m-4 rounded-full overflow-hidden">
+        <div className="flex flex-col flex-no-wrap md:flex-row items-center md:justify-around">
+          <div className="h-64 w-64 m-4 rounded-full overflow-hidden flex-shrink-0">
             <img className="h-full w-full object-top object-cover" 
               src={"/static/media/img_1128conv_large_1.1a6a8872.jpg"} 
               alt="me" 
             />
           </div>
-          <p className="text-lg md:text-xl lg:w-1/2 text-custom-lavender">
+          <p className="text-lg md:text-xl md:w-1/2 flex-shrink text-custom-lavender">
             I have a certificate for web development from <span>
             <a href="https://bootcamp.extension.ucsd.edu/coding/"
             className="text-custom-aqua underline">UC San Diego Extension</a></span> and 
