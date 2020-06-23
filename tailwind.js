@@ -10,6 +10,7 @@ module.exports = {
       md: '768px',
       lg: '1024px',
       xl: '1280px',
+      xxl: '1500px'
     },
     colors: {
       transparent: 'transparent',
@@ -158,6 +159,7 @@ module.exports = {
       '48': '12rem',
       '56': '14rem',
       '64': '16rem',
+      '96': '24rem',
     },
     backgroundColor: theme => theme('colors'),
     backgroundOpacity: theme => theme('opacity'),
@@ -209,7 +211,9 @@ module.exports = {
       outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
       none: 'none',
     },
-    container: {},
+    container: {
+      center: true
+    },
     cursor: {
       auto: 'auto',
       default: 'default',

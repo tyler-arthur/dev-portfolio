@@ -20,7 +20,7 @@ const Contact = () => {
   );
 
   return (
-    <div className="flex flex-col mt-20 mx-3 md:mx-16 p-6">
+    <div className="flex flex-col mt-20 mx-3 md:mx-16 lg:mx-24 xl:mx-64 xxl:mx-96 p-6">
       <div className="text-center">
         <h1 className="text-4xl font-medium text-custom-orange underline">
           What's Next?
@@ -29,7 +29,7 @@ const Contact = () => {
           I am currently looking for work as a developer. If you like what you see, lets get in touch! Contact me, let's get coffee and chat.
         </p>
       </div>
-      <form className="py-5"
+      <form className="py-5 md:px-24 lg:px-32 xl:px-40"
         onSubmit={handleSubmit}>
         <label className="text-3xl text-custom-orange" htmlFor="name">
           Name

@@ -19,7 +19,7 @@ const Overlay = () => {
     width < breakpoint ?
     null
     :
-    <div className="fixed left-0 bottom-0 flex flex-col items-center px-1">
+    <div className="fixed left-0 bottom-0 flex flex-col items-center px-1 md:mb-16 xl:ml-20 xl:pl-4">
       <div className="border border-black bg-custom-orange w-1 h-32 rounded-full my-4"></div>
 
         <a href="https://github.com/tarthurf">

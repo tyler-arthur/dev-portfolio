@@ -18,15 +18,15 @@ const Projects = () => {
   if (projectState <= -1) projectState = 2;
   
   return (
-    <div className="flex flex-col mt-20 mx-3 md:mx-16 p-6">
-      <h1 className="text-4xl font-medium text-custom-orange underline">Some of my work</h1>
+    <div className="flex flex-col mt-20 mx-3 md:mx-16 lg:mx-24 xl:mx-48 xxl:mx-64 p-6">
+      <h1 className="text-4xl font-medium text-center text-custom-orange underline">Some of my work</h1>
       <Card 
         title={projects[projectState].project}
         link={projects[projectState].link}
         image={projects[projectState].img}
         description={projects[projectState].description}
       />
-      <div className="flex justify-around items-center mt-2 mb-6">
+      <div className="flex justify-around lg:justify-center space-x-10 items-center mt-2 lg:mt-6 mb-6">
         <button className="flex-wrap flex-shrink md:text-2xl p-2 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg focus:outline-none focus:shadow-outline"
           onClick={() => setProjectState(projectState -= 1)}
         >
