@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
+
+  useEffect(() => window.scrollTo(0, 0), [])
 
   return (
     <div className="flex flex-col mt-20 mx-3 md:mx-16 lg:mx-24 xl:mx-96 p-6">

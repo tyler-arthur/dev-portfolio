@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import Card from '../card/Card';
 import projects from '../../assets/projects';
@@ -16,6 +16,8 @@ const Projects = () => {
 
   if (projectState >= 3) projectState = 0;
   if (projectState <= -1) projectState = 2;
+
+  useEffect(() => window.scrollTo(0, 0), [])
   
   return (
     <div className="flex flex-col mt-20 mx-3 md:mx-16 lg:mx-24 xl:mx-48 xxl:mx-64 p-6">

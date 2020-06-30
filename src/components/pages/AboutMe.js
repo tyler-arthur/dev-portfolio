@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import Me from '../../assets/images/img_1128conv_large_1.jpg'
 const AboutMe = () => {
 
   console.log(Me)
+
+  useEffect(() => window.scrollTo(0, 0), [])
 
   return (
     <div className="flex flex-col mt-20 justify-center md:mx-16 lg:mx-24 xl:mx-64 xxl:mx-96 mx-3 p-6">

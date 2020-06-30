@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import useForm from '../../utils/useForm';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
@@ -18,6 +18,8 @@ const Contact = () => {
         message: ""
     }, emailSubmit
   );
+
+  useEffect(() => window.scrollTo(0, 0), [])
 
   return (
     <div className="flex flex-col mt-20 mx-3 md:mx-16 lg:mx-24 xl:mx-64 xxl:mx-96 p-6">
@@ -48,7 +50,7 @@ const Contact = () => {
           Email
         </label>
         <textarea
-        className=" text-xl font-semibold w-full rounded-lg text-justify text-center p-2 my-2 focus:outline-none focus:shadow-outline"
+        className=" text-xl font-semibold w-full rounded-lg text-center p-2 my-2 focus:outline-none focus:shadow-outline"
           name="email"
           type="email"
           placeholder="Where can I respond?"
@@ -61,7 +63,7 @@ const Contact = () => {
           Message
         </label>
         <textarea
-        className=" text-lg w-full rounded-lg text-justify text-center p-2 my-2 focus:outline-none focus:shadow-outline"
+        className=" text-lg w-full rounded-lg  text-center p-2 my-2 focus:outline-none focus:shadow-outline"
           name="message"
           type="text"
           placeholder="What would you like to say?"

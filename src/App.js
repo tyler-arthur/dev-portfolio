@@ -19,7 +19,7 @@ function App() {
 
   return (
 
-    <div className="relative pb-48 bg-custom-purple min-h-screen relative overflow-hidden">
+    <div className="relative pb-48 bg-custom-purple min-h-screen overflow-hidden">
       <Router>
         <Switch>
           <Route path="/contact">
