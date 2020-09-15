@@ -12,9 +12,9 @@ export default [
     link : "https://tarthurf.github.io/Secure_Password_Generator/"
   },
   {
-    project : "MunchiMaps",
-    description : "Find restaurants near legal dispensaries and get a Google Maps trip to both. Best viewed in mobile format!",
-    img : "/static/media/munchimaps(cropped).de2c33bc.png",
-    link : "https://tarthurf.github.io/MunchiMaps/"
+    project : "Chatticus",
+    description : "Chatticus is a simple, session-based chat application built with Socket.io. Who needs friends when you can open multiple browser windows and chat with yourself!",
+    img : "/static/media/chatticus.png",
+    link : "https://floating-dusk-63158.herokuapp.com/"
   }
 ]
