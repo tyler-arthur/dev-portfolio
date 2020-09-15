@@ -14,7 +14,7 @@ export default [
   {
     project : "Chatticus",
     description : "Chatticus is a simple, session-based chat application built with Socket.io. Who needs friends when you can open multiple browser windows and chat with yourself!",
-    img : "/static/media/chatticus.png",
+    img : "https://github.com/tarthurf/chatticus/raw/master/chatticus.png",
     link : "https://floating-dusk-63158.herokuapp.com/"
   }
 ]
