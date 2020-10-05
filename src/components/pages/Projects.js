@@ -14,8 +14,8 @@ const Projects = () => {
 
   let [projectState, setProjectState] = useState(0);
 
-  if (projectState >= 3) projectState = 0;
-  if (projectState <= -1) projectState = 2;
+  if (projectState >= 4) projectState = 0;
+  if (projectState <= -1) projectState = 3;
 
   useEffect(() => window.scrollTo(0, 0), [])
   
@@ -27,6 +27,7 @@ const Projects = () => {
         link={projects[projectState].link}
         image={projects[projectState].img}
         description={projects[projectState].description}
+        repo={projects[projectState].repo}
       />
       <div className="flex justify-around lg:justify-center space-x-10 items-center mt-2 lg:mt-6 mb-6">
         <button className="flex-wrap flex-shrink md:text-2xl p-2 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg focus:outline-none focus:shadow-outline"
@@ -50,6 +51,13 @@ const Projects = () => {
         </div>
         <div className="space-x-5 text-custom-orange">
         {projectState === 2 ?
+          <FontAwesomeIcon icon={fasCircle} />
+          :
+          <FontAwesomeIcon icon={farCircle} />
+        }
+        </div>
+        <div className="space-x-5 text-custom-orange">
+        {projectState === 3 ?
           <FontAwesomeIcon icon={fasCircle} />
           :
           <FontAwesomeIcon icon={farCircle} />

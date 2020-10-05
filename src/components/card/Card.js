@@ -19,7 +19,7 @@ const Card = (props) => {
         </div>
       </div>
       <div className="w-11/12 lg:w-2/5 px-2 pt-6 pb-2 -mt-4 lg:pt-2 lg:-ml-4 lg:pl-6 lg:text-left border-4 border-solid border-custom-blue shadow-inner rounded-md text-custom-orange text-lg md:text-xl">
-        <p className="border-t-2  lg:border-t-0 lg:border-l-2 border-custom-orange p-2">{props.description}</p>
+        <p className="border-t-2  lg:border-t-0 lg:border-l-2 border-custom-orange p-2">{props.description} <br></br> <a className="text-custom-aqua underline lg:no-underline lg:hover:underline" href={props.repo}>Github</a></p>
       </div>
       
     </div>
