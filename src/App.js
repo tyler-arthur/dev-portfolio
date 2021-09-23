@@ -4,7 +4,7 @@ import './assets/main.css';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import Home from './components/pages/Home';
-import Overlay from './components/overlay/Overlay';
+// import Overlay from './components/overlay/Overlay';
 import AboutMe from './components/pages/AboutMe';
 import Projects from './components/pages/Projects';
 import Contact from './components/pages/Contact';
@@ -19,27 +19,20 @@ function App() {
 
   return (
 
-    <div className="relative pb-48 bg-custom-purple min-h-screen overflow-hidden">
+    <div className="relative pb-8 bg-custom-purple min-h-screen overflow-hidden">
       <Router>
+        <Navbar />
         <Switch>
           <Route path="/contact">
-            <Navbar />
-            <Overlay />
             <Contact />
           </Route>
           <Route path="/about-me">
-            <Navbar />
-            <Overlay />
             <AboutMe />
           </Route>
           <Route path="/projects">
-            <Navbar />
-            <Overlay />
             <Projects />
           </Route>
           <Route path="/">
-            <Navbar />
-            <Overlay />
             <Home />
           </Route>
         </Switch>

@@ -19,17 +19,17 @@ const Home = () => {
       <p className="py-2 self-center text-lg text-right md:text-xl md:text-center lg:text-left md:w-2/3 lg:w-1/2 xl:w-3/4 font-medium text-custom-orange">
         I am a full-stack web developer based in sunny San Diego, CA and I enjoy building eye-catching websites with elegance and simplicity in mind.
       </p>
-      <div className="flex justify-around py-4 md:py-8 ">
+      <div className="flex justify-end py-4 md:py-8 ">
         <Link to="/about-me">
           <button className="flex-grow flex-shrink md:text-2xl p-2 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg focus:outline-none focus:shadow-outline">
             Let's get started!
           </button>
         </Link>
-        <Link to="/contact">
+        {/* <Link to="/contact">
           <button className="flex-wrap flex-shrink md:text-2xl p-2 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg focus:outline-none focus:shadow-outline">
             Contact Me!
           </button>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

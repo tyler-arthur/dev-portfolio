@@ -7,21 +7,20 @@ import { faCircle as farCircle } from '@fortawesome/free-regular-svg-icons';
 import { faCircle as fasCircle } from '@fortawesome/free-solid-svg-icons';
 import munchiMaps from '../../assets/images/munchimaps(cropped).png';
 
-
 const Projects = () => {
 
-  console.log(munchiMaps)
+  // console.log(munchiMaps)
 
   let [projectState, setProjectState] = useState(0);
 
-  if (projectState >= 4) projectState = 0;
-  if (projectState <= -1) projectState = 3;
+  if (projectState >= 3) projectState = 0;
+  if (projectState <= -1) projectState = 2;
 
   useEffect(() => window.scrollTo(0, 0), [])
   
   return (
     <div className="flex flex-col mt-20 mx-3 md:mx-16 lg:mx-24 xl:mx-48 xxl:mx-64 p-6">
-      <h1 className="text-4xl font-medium text-center text-custom-orange underline">Some of my work</h1>
+      <h1 className="text-4xl font-medium text-center text-custom-orange underline">Projects</h1>
       <Card 
         title={projects[projectState].project}
         link={projects[projectState].link}
@@ -56,13 +55,13 @@ const Projects = () => {
           <FontAwesomeIcon icon={farCircle} />
         }
         </div>
-        <div className="space-x-5 text-custom-orange">
+        {/* <div className="space-x-5 text-custom-orange">
         {projectState === 3 ?
           <FontAwesomeIcon icon={fasCircle} />
           :
           <FontAwesomeIcon icon={farCircle} />
         }
-        </div>
+        </div> */}
         <button className="flex-wrap flex-shrink md:text-2xl p-2 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg focus:outline-none focus:shadow-outline"
           onClick={() => setProjectState(projectState += 1)}
         >
@@ -73,12 +72,12 @@ const Projects = () => {
       <div className="flex justify-around">
         <Link to="/about-me">
           <button className="flex-wrap flex-shrink md:text-2xl p-2 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg focus:outline-none focus:shadow-outline">
-              Go Back
+              About
           </button>
         </Link>
         <Link to="/contact">
           <button className="flex-wrap flex-shrink md:text-2xl p-2 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg focus:outline-none focus:shadow-outline">
-            Contact Me
+            Contact
           </button>
         </Link>
       </div>

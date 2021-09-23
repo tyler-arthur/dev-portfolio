@@ -5,9 +5,9 @@ const Footer = () => {
 
   return (
     <div className="absolute w-full bottom-0 p-4 bg-custom-darkPurple lg:pin-b lg:mt-16 text-center text-custom-orange">
-      <footer>
+      {/* <footer>
         Created by Tyler Arthur
-      </footer>
+      </footer> */}
     </div>
   );
 }

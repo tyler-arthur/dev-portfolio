@@ -32,7 +32,7 @@ const Contact = () => {
     <div className="flex flex-col mt-20 mx-3 md:mx-16 lg:mx-24 xl:mx-64 xxl:mx-96 p-6">
       <div className="text-center">
         <h1 className="text-4xl font-medium text-custom-orange underline">
-          What's Next?
+          Contact
         </h1>
         <p className="text-xl md:text-2xl font-medium text-custom-lavender">
           I am currently looking for work as a developer. If you like what you see, lets get in touch! Contact me, let's get coffee and chat.
@@ -103,7 +103,7 @@ const Contact = () => {
       <div className="flex justify-around mt-6">
         <Link to="/projects">
           <button className="flex-wrap flex-shrink md:text-2xl p-2 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg focus:outline-none focus:shadow-outline">
-            Go Back
+            Projects
           </button>
         </Link>
         <Link to="/">

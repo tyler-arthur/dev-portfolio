@@ -12,7 +12,7 @@ const AboutMe = () => {
       <div className="text-center space-y-3">
         <h1 className="text-4xl font-bold text-custom-orange underline">About</h1>
         <p className="text-lg md:text-xl text-custom-lavender">
-          Hey there! In case you missed it, my name is Tyler. I am a full-stack web developer with expertise in customer service which ensures that my team delivers exactly what the customer wants. 
+        I am a Fullstack developer with a background in web development, client engagement, and military-grade hardware manufacturing. I am friendly, articulate, driven, and ready to grow professionally through experience.
         </p>
         <div className="sm:hidden md:block h-1 w-full rounded-full bg-custom-orange"></div>
         <div className="flex flex-col flex-no-wrap md:flex-row items-center md:justify-around">
@@ -44,14 +44,14 @@ const AboutMe = () => {
         <div className="flex flex-col text-center md:text-justify space-y-1">
           <span className="text-custom-orange text-lg lg:text-xl"><i className="fab fa-node-js text-2xl lg:text-3xl text-custom-orange"></i> NodeJS</span>
           <span className="text-custom-orange text-lg lg:text-xl"><i className="fas fa-server text-2xl lg:text-3xl text-custom-orange"></i> Express</span>
-          <span className="text-custom-orange text-lg lg:text-xl"><i className="fab fa-css3-alt text-2xl lg:text-3xl text-custom-orange"></i> Multiple CSS Frameworks</span>
+          <span className="text-custom-orange text-lg lg:text-xl"><i className="fab fa-css3-alt text-2xl lg:text-3xl text-custom-orange"></i> CSS Frameworks</span>
         </div>
       </div>
       <div className="h-1 w-full my-4 rounded-full bg-custom-orange"></div>
       <div className="flex justify-around">
         <Link to="/">
           <button className="flex-wrap flex-shrink md:text-2xl p-2 border border-custom-aqua text-custom-aqua rounded-tr-lg rounded-bl-lg focus:outline-none focus:shadow-outline">
-            Go Back
+            Home
           </button>
         </Link>
         <Link to="/projects">
